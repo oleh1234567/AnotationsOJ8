@@ -20,7 +20,7 @@ public class UseCaseTracker {
                 System.out.println("Missing use case " + i));
     }
     public static void main(String[] args) {
-        List<Integer> useCases = IntStream.range(47, 51)
+        List<Integer> useCases = IntStream.rangeClosed(47, 51)
                 .boxed().collect(Collectors.toList());
         trackUseCases(useCases, PasswordUtils.class);
     }

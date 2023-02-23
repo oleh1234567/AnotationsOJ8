@@ -20,6 +20,11 @@ public class PasswordUtils {
         return !prevPasswords.contains(passwd);
     }
 
+    @UseCase(id = 50, description = "I don't understand anotations")
+    public String generatePassword(){
+        return "fdafdafd2321";
+    }
+
     public static void main(String[] args) {
         PasswordUtils passwordUtils = new PasswordUtils();
 
